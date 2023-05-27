@@ -1,10 +1,27 @@
 
-# git　コマンド
+# Git
 
+## GitHub、Gitについて
+
+- GitHub
+ >Gitのソフトウェア開発をサポートするWEBサービス
+
+- Git
+ >開発をサポートするソフトウェア
+  変更履歴を追えたりなど有能！
+
+---
+
+##Git　コマンド
+
+
+###ディレクトリ、ファイル関係
 
 - ディレクトリ(フォルダー)作成
 
 >mkdir "ディレクトリ名"
+
+mkdir = make directory
 
 ---
 
@@ -18,9 +35,6 @@
 
 >ls
 ​
-root@DESKTOP-99S7J9L:~/skill-UP# ls
-consolidate
-
 >ls -a 
  全てのファイル、ディレクトリが表示される
 
@@ -32,17 +46,28 @@ consolidate
 
 >cd .. [1つ前のディレクトリに戻る]
 
-oot@DESKTOP-99S7J9L:~/skill-UP# ls
-consolidate
-root@DESKTOP-99S7J9L:~/skill-UP# cd ..
-root@DESKTOP-99S7J9L:~# ls
-skill-UP
+ cd = change directory
 
 ---
 
-- Gitの中に新しいブランチを作成する
+###branch関係
+
+- ブランチ(枝)
+
+branch = 枝、別々の時間軸
+分岐(枝分かれ)させる事で別々のバージョンを開発・管理できる。
+
+git branch
+
+main
+*test　「＊」がついている箇所が現在のブランチ名
+
+---
+
+- Gitで新しいブランチを作成する
 
 >git switch -c "ブランチ名"
+ -c = create
 
 ---
 
@@ -50,6 +75,7 @@ skill-UP
 
 >git checkout "ブランチ名"
 
+>git switch "ブランチ名"
 
 ---
 
@@ -68,22 +94,23 @@ skill-UP
 
 >git pull
 
----
+リモートのmainブランチからpullする場合
+git pull origin main
 
-- ブランチ(枝)
-```
-git branch
-```
-main
-*test　「＊」がついている箇所が現在のブランチ名
+pull = 引っ張る
+リモートリポジトリから持ってくるてきな
 
 ---
 
-- ディレクトリーを保存
+- gitのステージングに指定したディレクトリ・ファイルに追加する
 
 > git add "パス名"
- 
+
+add = 追加
+
 ---
+
+###コミット
 
 - コミットの仕方
 
@@ -98,21 +125,13 @@ main
 ---
 
 - コミット内容をアップロード
-```
-git push 
-```
+
+>git push 
+
 ---
 
+###履歴を確認する
+
 - ログ
-```
-git log
-```
 
-## GitHub、Gitについて
-
-- GitHub
- >Gitのソフトウェア開発をサポートするWEBサービス
-
-- Git
- >開発をサポートするソフトウェア
-  変更履歴を追えたりなど有能！
+>git log
