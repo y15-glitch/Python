@@ -77,7 +77,7 @@ Q　merge(マージ)とは？
 A=theirs B=ours
 A+B=Aでいいのかな？
 
-**git merge branch**
+**git merge "branch名"**
 
 <br>
 
@@ -161,7 +161,7 @@ git switch main
 
 - ブランチの統合
 
-![代替テキスト](image/image2.jpg)
+![](image/image2.jpg)
 
 
 <br>
@@ -170,9 +170,12 @@ git switch main
 
 > git log --oneline
 
-![代替テキスト](image/image1.jpg)
+![](image/image1.jpg)
+
+<br>
 
 ステージングのファイル差分の表示と未ステージングの差分表示
 >   **git diff <commit1> <commit2>**
 
-![代替テキスト](image/image3.jpg)
+![](image/image3.jpg)
+
