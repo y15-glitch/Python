@@ -126,8 +126,6 @@ Q  git addの取り消し
 >特定のファイルのみを取り消し
 **git reset HEAD ファイル名**
 
-**Gitの動作原理が関係していて、2回目以降のコマンドが違うのは分かったけど、具体的なことが分からない**
-
 <br>
 
 Q  サブモジュールについて
@@ -161,8 +159,7 @@ git switch main
 
 - ブランチの統合
 
-![代替テキスト](image/image2.jpg)
-
+![](image/image2.jpg)
 
 <br>
 
@@ -170,9 +167,11 @@ git switch main
 
 > git log --oneline
 
-![代替テキスト](image/image1.jpg)
+![](image/image1.jpg)
+
+<br>
 
 ステージングのファイル差分の表示と未ステージングの差分表示
 >   **git diff <commit1> <commit2>**
 
-![代替テキスト](image/image3.jpg)
+![](image/image3.jpg)
