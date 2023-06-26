@@ -42,6 +42,22 @@ pip3 install モジュール名
 [aptコマンド](https://qiita.com/SUZUKI_Masaya/items/1fd9489e631c78e5b007)
 
 
+```
+python3 -m venv "ファイル名"
+sudo apt-get install pyrhon3-venv
+```
+
+rm -rf venv　フォルダー削除
+
+source　ファイル名
+ファイル実行
+
+source venv/bin/activate
+
+exit()
+
+pip install django==3.2
+
 ---
 
 - おみくじアプリ
