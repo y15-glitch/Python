@@ -22,17 +22,24 @@ Djangoの有無：有りの場合は、カスタマイズしてページを表�
               1つの質問に対して、複数のresponseができる。
 　　　　　　　無しの場合は、1つの質問に対して、1つしかresponseできない。
 
+![Djangoの有無画像](image1.png)
 
 Django無し 例)youtube
 チャンネル登録をした動画を新着動画にする場合は、Djangoを使わないと
 新しいページを1個1個作成しないと対応できない。
 
+![](image2.png)
 
 ---
 
 - 開発環境
 
 開発環境の構築：
+
+pip3 install モジュール名
+
+
+[aptコマンド](https://qiita.com/SUZUKI_Masaya/items/1fd9489e631c78e5b007)
 
 
 ---
