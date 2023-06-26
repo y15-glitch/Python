@@ -60,6 +60,12 @@ pip install django==3.2
 
 ---
 
+Django-admin
+
+
+
+---
+
 - おみくじアプリ
 
 
