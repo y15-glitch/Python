@@ -62,6 +62,20 @@ pip install django==3.2
 
 Django-admin
 
+python3 manage.py runserver
+
+---
+
+サーバー:利用者の要求（リクエスト）に対して、それに応答したデータを提供するコンピュータやプログラムのこと
+
+ブラウザーからrequestを受け取って⇔responsを返す
+
+![ブラウザーの図](image3.png)
+
+
+
+
+
 
 
 ---
