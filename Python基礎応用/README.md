@@ -22,13 +22,13 @@ Djangoの有無：有りの場合は、カスタマイズしてページを表�
               1つの質問に対して、複数のresponseができる。
 　　　　　　　無しの場合は、1つの質問に対して、1つしかresponseできない。
 
-![Djangoの有無画像](image1.png)
+![Djangoの有無画像](image/image1.png)
 
 Django無し 例)youtube
 チャンネル登録をした動画を新着動画にする場合は、Djangoを使わないと
 新しいページを1個1個作成しないと対応できない。
 
-![](image2.png)
+![](image/image2.png)
 
 ---
 
@@ -36,27 +36,32 @@ Django無し 例)youtube
 
 開発環境の構築：
 
-pip3 install モジュール名
-
+インストール方法
+pip3 install "モジュール名"
+<br>
 
 [aptコマンド](https://qiita.com/SUZUKI_Masaya/items/1fd9489e631c78e5b007)
-
+<br>
 
 ```
 python3 -m venv "ファイル名"
 sudo apt-get install pyrhon3-venv
 ```
+<br>
 
 rm -rf venv　フォルダー削除
+<br>
 
+ファイル実行:
 source　ファイル名
-ファイル実行
 
 source venv/bin/activate
 
 exit()
 
+djangoインストール:
 pip install django==3.2
+
 
 ---
 
@@ -70,13 +75,29 @@ python3 manage.py runserver
 
 ブラウザーからrequestを受け取って⇔responsを返す
 
-![ブラウザーの図](image3.png)
+![ブラウザーの図](image/image3.png)
 
 
+asigi.py　wsgi.py
+Djangoの中継的役割
+間に入って処理を行ってくれる
+
+![概略図](image/image4.png)
 
 
+settingus.py
+初期設定、細かい設定を行うファイル
+
+![setting.pyの説明資料](https://office54.net/python/django/django-settings-meaning)
 
 
+urls.py
+reqestを受けた後の処理
+どのviewをresponsするか処理する
+
+![urls.py 概略図](image/image5.png)
+
+![setting.pyの説明資料](https://office54.net/python/django/urls-path-include)
 
 ---
 
