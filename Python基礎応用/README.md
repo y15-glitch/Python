@@ -63,14 +63,15 @@ djangoインストール:
 pip install django==3.2
 
 
----
-
 Django-admin
 
+manage.py起動：
 python3 manage.py runserver
+webの作成
 
----
 
+<br>
+<br>
 サーバー:利用者の要求（リクエスト）に対して、それに応答したデータを提供するコンピュータやプログラムのこと
 
 ブラウザーからrequestを受け取って⇔responsを返す
@@ -101,7 +102,16 @@ reqestを受けた後の処理
 
 ---
 
-- おみくじアプリ
+urls.py　実装:
+
+オブジェクト
+Httpresponsが返ってくるか
+クラスが返ってくるか
+
+urlsが行う仕事
+
+python3 manege.py startapp omikuji
+
 
 
 
