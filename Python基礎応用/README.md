@@ -43,10 +43,18 @@ pip3 install "モジュール名"
 [aptコマンド](https://qiita.com/SUZUKI_Masaya/items/1fd9489e631c78e5b007)
 <br>
 
+仮想環境構築
 ```
 python3 -m venv "ファイル名"
 sudo apt-get install pyrhon3-venv
 ```
+<br>
+
+venv:
+venvとは、Pythonの標準の言語処理系が持つ機能の一つで
+システム上にPythonが動作する仮想的な環境（virtual environment）を作り出すもの。 
+同じシステム上に複数の独立した環境を構成して使い分けることができる。
+
 <br>
 
 rm -rf venv　フォルダー削除
@@ -55,20 +63,29 @@ rm -rf venv　フォルダー削除
 ファイル実行:
 source　ファイル名
 
+仮想環境立ち上げ
+```
 source venv/bin/activate
+```
 
 exit()
 
 djangoインストール:
+```
 pip install django==3.2
+```
 
+<br>
 
-Django-admin
+Django管理者権限：
+django-admin
 
-manage.py起動：
+webサーバー作成：
+```
 python3 manage.py runserver
-webの作成
+```
 
+sudo apt update
 
 <br>
 <br>
@@ -102,17 +119,63 @@ reqestを受けた後の処理
 
 ---
 
-urls.py　実装:
 
+views.py
+```python
+from django.http import HttpResponse
+from random import choice
+
+def index(request):
+    
+    omikuji = ["大吉","中吉","小吉","凶"]
+    
+    result = choice(omikuji)
+    
+    responseobject = HttpResponse(result)
+    return responseobject
+
+```
+
+urls.py　実装:
 オブジェクト
 Httpresponsが返ってくるか
 クラスが返ってくるか
 
-urlsが行う仕事
 
-python3 manege.py startapp omikuji
+アプリ作成
+```
+python3 manege.py startapp(引数) "ファイル名"
+```
 
 
+プロジェクトとアプリの繋ぎこみ
+
+アプリ urls.py
+```python
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('kuji/', views.index),
+]
+```
+
+オブジェクト urls.py
+```python
+from django.contrib import admin
+from django.urls import path, include
 
 
+urlpatterns = [
+    path('kanri/', admin.site.urls),
+    path('omi/', include('omikuji.urls')),
+]
+```
 
+新しく作成したアプリを認識させる
+```python
+INSTALLED_APPS = [
+        'omikui.apps.OmikujiConfig'
+]
+```
