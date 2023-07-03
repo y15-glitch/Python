@@ -52,7 +52,7 @@ sudo apt-get install pyrhon3-venv
 
 venv:
 venvとは、Pythonの標準の言語処理系が持つ機能の一つで
-システム上にPythonが動作する仮想的な環境（virtual environment）を作り出すもの。 
+システム上にPythonが動作する仮想的な環境（virtual environment）を作り出すもの。
 同じシステム上に複数の独立した環境を構成して使い分けることができる。
 
 <br>
